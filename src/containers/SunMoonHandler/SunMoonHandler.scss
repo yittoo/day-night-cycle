@@ -1,0 +1,18 @@
+
+/*
+  Styling to keep Sun and Moon in an ellipse that rotates (with javascript
+  inside component) around viewport to simulate day/night cycle with their movement
+*/
+.SunMoonHandler {
+  position: fixed;
+  top: 25vw;
+  width: 130vw;
+  height: 200vh;
+  display: flex;
+  justify-content: space-between;
+  transform-origin: center;
+  z-index: 2000;
+  .Moon {
+    align-self: flex-end;
+  }
+}

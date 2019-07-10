@@ -1,0 +1,82 @@
+.Moon {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  box-shadow: 0 0 10rem white, 0 0 2rem #00000044, 0 0 4rem #00000044;
+  background-color: var(--moon-color);
+  // z-index: 2000;
+}
+
+/*
+  Cancelled attempt on creating Crater spots on moon as it looked bad
+*/
+
+// .Moon__Crater {
+//   position: absolute;
+//   border: 3px solid #00000077;
+//   border-radius: 100rem;
+//   box-shadow: 0 0 0.1rem #000000ee, 0 0 2rem #ffffff;
+//   &--1 {
+//     transform: rotate(-60deg);
+//     width: 1.7rem;
+//     height: 1rem;
+//     top: 50%;
+//     left: 50%;
+//   }
+//   &--2 {
+//     transform: rotate(120deg);
+//     width: 1.7rem;
+//     height: 1rem;
+//     top: 50%;
+//     left: 20%;
+//   }
+//   &--3 {
+//     transform: rotate(40deg);
+//     width: 1.7rem;
+//     height: 1rem;
+//     top: 40%;
+//     left: 70%;
+//   }
+//   &--4 {
+//     transform: rotate(-60deg);
+//     width: 1.7rem;
+//     height: 1.9rem;
+//     top: 30%;
+//     left: 20%;
+//   }
+//   &--5 {
+//     transform: rotate(-60deg);
+//     width: 1.2rem;
+//     height: 1.3rem;
+//     top: 50%;
+//     left: 80%;
+//   }
+//   &--6 {
+//     transform: rotate(-60deg);
+//     width: 1.2rem;
+//     height: 1.3rem;
+//     top: 50%;
+//     left: 80%;
+//   }
+//   &--7 {
+//     transform: rotate(-60deg);
+//     width: 1.2rem;
+//     height: 1.3rem;
+//     top: 50%;
+//     left: 80%;
+//   }
+//   &--8 {
+//     transform: rotate(-60deg);
+//     width: 1.2rem;
+//     height: 1.3rem;
+//     top: 50%;
+//     left: 80%;
+//   }
+//   &--9 {
+//     transform: rotate(-60deg);
+//     width: 1.2rem;
+//     height: 1.3rem;
+//     top: 50%;
+//     left: 80%;
+//   }
+// }

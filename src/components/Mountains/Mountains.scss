@@ -1,0 +1,21 @@
+.Mountains {
+  &--overlay,
+  &--image {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+  }
+  &--overlay {
+    height: 100%;
+    background-image: var(--mountain-overlay-gradient);
+    z-index: 10;
+  }
+  &--image {
+    background-image: url(../../assets/image/mountains-smol.png);
+    min-height: 60%;
+    background-size: cover;
+    background-position-x: center;
+    z-index: 5;
+  }
+}

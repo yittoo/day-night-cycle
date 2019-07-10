@@ -1,0 +1,25 @@
+.CloudHandler {
+  position: fixed;
+  /*
+    This portion also can be moved to javascript but make sure to keep 24/41 ratio
+    between height/width, else the cloud will not look good, another option is
+    to not play around with width+height and use scale only
+  */
+  &--1,
+  &--2,
+  &--3 {
+    height: 12rem;
+    width: 20.5rem;
+  }
+  &--4,
+  &--5 {
+    height: 18rem;
+    width: 30.75rem;
+  }
+  // reverses the cloud so it seems unique, this also could be moved to javascipt
+  &--1,
+  &--4 {
+    transform: scaleX(-1);
+  }
+  z-index: 4000;
+}

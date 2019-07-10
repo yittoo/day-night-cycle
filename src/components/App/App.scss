@@ -1,0 +1,117 @@
+html {
+  font-size: 62.5%;
+  @media only screen and (max-width: 75em) {
+    font-size: 50%;
+  }
+  @media only screen and (max-width: 56.25em) {
+    font-size: 25%;
+  }
+}
+
+*::before,
+*,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+  Where the magic happens, this Class determines the entirity of CSS variables
+  javascript assigns classnames like App--noon or App--dusk to set entire theme
+  of application so there are only 10 lines of code per theme this acts as
+  <body> for entire application
+*/
+.App {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  color: var(--primary-color);
+
+  // gradient that applies to background
+  // depending on day state this can be extended to more colors
+  --horizon-gradient: linear-gradient(
+    to bottom,
+    var(--sky-top),
+    var(--sky-bottom)
+  );
+
+  // gradient that applies to mountain that allows simulating
+  // light effects that would happen on mountain
+  // depending on day state this can be extended to more colors
+  --mountain-overlay-gradient: linear-gradient(
+    to bottom,
+    var(--mountain-top),
+    var(--mountain-bottom)
+  );
+  --sun-color: #f2ef88;
+  --moon-color: #f0f0f0;
+  --cloud-color: #ffffff;
+  --cloud-opacity: 0.6;
+  &--dawn {
+    --primary-color: #333333;
+    --sky-top: #fff1dd;
+    --sky-bottom: #293844;
+    --mountain-top: #fff1dd77;
+    --mountain-bottom: #29384477;
+    --horizon-gradient: linear-gradient(
+      to bottom left,
+      var(--sky-top),
+      var(--sky-bottom)
+    );
+  }
+  &--noon {
+    --sky-top: #c7ecee;
+    --sky-bottom: #dff9fb;
+    --mountain-top: #dff9fb44;
+    --mountain-bottom: #ffffff22;
+  }
+  &--dusk {
+    --primary-color: #f0f0f0;
+    --sky-top: #661a34;
+    --sky-top-second: #30336b;
+    --sky-top-third: #f0932b;
+    --sky-bottom: #ae0a1e;
+    --mountain-top: #661a3455;
+    --mountain-bottom-second: #ae0a1e33;
+    --mountain-bottom: #15000099;
+    --sun-color: #f0932b;
+
+    --horizon-gradient: linear-gradient(
+      to bottom left,
+      var(--sky-top) -10%,
+      var(--sky-top-second) 40%,
+      var(--sky-top-third) 90%,
+      var(--sky-bottom)
+    );
+    --mountain-overlay-gradient: linear-gradient(
+      to bottom,
+      var(--mountain-top),
+      var(--mountain-bottom-second),
+      var(--mountain-bottom)
+    );
+  }
+  &--night {
+    --primary-color: #f0f0f0;
+    --sky-top: #0c2461;
+    --sky-bottom: #000000;
+    --mountain-top: #0c246177;
+    --mountain-bottom: #000000cc;
+  }
+}
+
+.Horizon {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  background-image: var(--horizon-gradient);
+  z-index: -5;
+}
+
+

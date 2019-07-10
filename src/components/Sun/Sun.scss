@@ -1,0 +1,15 @@
+.Sun {
+  width: 20rem;
+  height: 20rem;
+  background-image: linear-gradient(
+    to bottom left,
+    #ffffffcc -70%,
+    var(--sun-color) 45%,
+    var(--sun-color) 55%, 
+    #ffffffcc 170%
+  );
+  border-radius: 50%;
+  box-shadow: 0 0 12rem var(--sun-color), 0 0 6rem #ffffffcc, 0 0 2rem #00000077;
+  // z-index: 2000;
+  transition: background-color .4s
+}

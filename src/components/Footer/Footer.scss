@@ -1,0 +1,17 @@
+.Footer {
+  position: fixed;
+  font-weight: 100;
+  bottom: 3rem;
+  text-align: center;
+  z-index: 20000;
+  font-size: 1.5rem;
+  color: white;
+  letter-spacing: 1px;
+  a {
+    color: inherit;
+  }
+  @media only screen and (max-width: 56.25em) {
+    font-size: 3rem;
+    bottom: 4rem;
+  }
+}
