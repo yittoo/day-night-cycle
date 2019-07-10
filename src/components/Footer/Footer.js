@@ -16,7 +16,7 @@ const Footer = () => {
         </a>{" "}
         |{" "}
         <a
-          href="https://github.com/yittoo/day-night-design"
+          href="https://github.com/yittoo/day-night-cycle"
           target="_blank"
           rel="noopener noreferrer"
         >

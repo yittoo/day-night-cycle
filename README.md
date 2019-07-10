@@ -1,6 +1,6 @@
 ## Day & Night simulation using React and CSS only
 
-Demo: Soon
+Demo: https://daynight-sozerdesign.netlify.com/
 
 Uses power of modern react 16.8 Hooks as well as Redux's newly introduced hooks
 
